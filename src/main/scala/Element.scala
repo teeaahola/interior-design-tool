@@ -4,7 +4,7 @@ import scalafx.scene.shape.*
 
 class Element(val shape: Shape):
 
-  /** Each elementkeeps track of its x and y positions on the pane. */
+  /** Each element keeps track of its x and y positions on the pane. */
   var x: Double = 0
   var y: Double = 0
 

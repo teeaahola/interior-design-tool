@@ -5,7 +5,7 @@ import scalafx.scene.shape.*
 import scalafx.scene.paint.Color.*
 import scalafx.geometry.Insets
 import scalafx.geometry.Orientation.Vertical
-import scalafx.scene.control.{Button, Label, ScrollPane, Separator, Tooltip}
+import scalafx.scene.control.{Button, Label, ScrollPane, Separator}
 import scalafx.scene.paint.Color
 import scalafx.scene.text.Font
 

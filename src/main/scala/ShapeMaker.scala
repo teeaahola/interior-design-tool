@@ -1,6 +1,6 @@
 import scalafx.scene.control.{ButtonType, Tooltip}
 import scalafx.scene.paint.Color
-import scalafx.scene.paint.Color.{Aqua, Black, White}
+import scalafx.scene.paint.Color.{Black, White}
 import scalafx.scene.shape.{Arc, ArcType, Circle, Ellipse, Rectangle, Shape}
 import scalafx.Includes.jfxColor2sfx
 import scalafx.scene.layout.Pane
@@ -37,7 +37,7 @@ class ShapeMaker:
       case _ => throw NoSuchShapeException("Cannot create icon from unknown shape.")
 
 
-  /** Helper fucntion for deciding which shape should a new Furniture be intitialized with. */
+  /** Helper function for deciding which shape should a new Furniture be intialized with. */
   private def furnitureShapeMatch(shape: Shape, isLampOrCarpet: Boolean): Shape =
     shape match
       case circle: Circle => Circle(if isLampOrCarpet then 10 else 30)
@@ -185,7 +185,7 @@ class ShapeMaker:
       case _ => throw NoSuchShapeException("Cannot create icon from unknown shape.")
 
 
-  /** Helper function for decising which kind of Fixture will be created. */
+  /** Helper function for deciding which kind of Fixture will be created. */
   private def fixtureMatch(shape: Shape, isAppliance: Boolean): Fixture =
     shape match
       case rectangle: Rectangle =>

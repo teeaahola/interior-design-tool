@@ -17,7 +17,7 @@ class TopMenu(pane: Pane, plan: FloorPlan) extends MenuBar:
 
   private var hasBackgroundImage: Boolean = false
 
-  /** Make opening images as background images posible and allow the end result to be saved
+  /** Make opening images as background images possible and allow the end result to be saved
    * as a picture. */
   private val open = new MenuItem("Open"):
     onAction = eventHandled =>

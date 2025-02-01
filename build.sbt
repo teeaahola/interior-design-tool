@@ -4,7 +4,7 @@ ThisBuild / scalaVersion := "3.3.0"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "LoveItOrListIt"
+    name := "interior-design-tool"
   )
 
 libraryDependencies += "org.scalafx" % "scalafx_3" % "20.0.0-R31"

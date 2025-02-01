@@ -2,9 +2,6 @@ import javafx.scene.input.MouseEvent
 import scalafx.scene.paint.Color.Red
 import scalafx.scene.shape.Shape
 
-/** I received help with this class and its implementation from https://edencoding.com/drag-shapes-javafx/
- * and Vilma Judin. */
-
 /** This class is used to make the elements of the floorplan draggable, i.e. they can be dragged
  * with the mouse to the desired position on the floorplan. Each element requires its own Draggable. */
 
@@ -19,7 +16,7 @@ class Draggable:
 
   /** This function is called in makeDraggable to check whether the new position of the element
    * intersects with any other element. */
-  private def interectionCheck(element: Element, plan: FloorPlan): Boolean =
+  private def intersectionCheck(element: Element, plan: FloorPlan): Boolean =
     var posNotAllowed = false
     
     val furnitures =
@@ -86,7 +83,7 @@ class Draggable:
     /** When the mouse is released, either return the shape to its previous position or set it
      * where the mouse was released and update the internal state. */
     shape.setOnMouseReleased((event) =>
-      if interectionCheck(element, plan) then
+      if intersectionCheck(element, plan) then
         shape.setLayoutY(previousY)
         shape.setLayoutX(previousX)
         element match
